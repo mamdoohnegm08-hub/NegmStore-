@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>حسابات ببجي للبيع | Negm Store</title>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#07090f;--surface:#10141f;--ink:#f3ecda;--muted:#a3a89a;--gold:#e0b14a;--blue:#4cc3ff;--line:#262c3d;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.7 Tajawal,Tahoma,sans-serif}
+h1,h2,h3,.logo{font-family:"Reem Kufi",Tajawal,sans-serif;margin:0;line-height:1.25}
+.wrap{max-width:1040px;margin:auto;padding:0 18px}
+header{position:sticky;top:0;z-index:10;background:rgba(7,9,15,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-size:24px;font-weight:700;color:var(--gold)}
+nav{display:flex;gap:18px;font-weight:500}nav a{color:var(--ink);text-decoration:none}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.btn{display:inline-block;background:var(--gold);color:#13100a;font:700 17px Tajawal,sans-serif;border:0;border-radius:10px;padding:11px 26px;text-decoration:none;cursor:pointer}
+.btn.alt{background:transparent;border:2px solid var(--gold);color:var(--gold)}
+.tg{background:var(--blue);color:#06121a;font-weight:700;text-decoration:none;border-radius:8px;padding:4px 16px}
+.hero img{display:block;width:100%;border-radius:0 0 18px 18px}
+.hero .row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;padding:22px 0 10px}
+.perks{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;padding:6px 0 30px}
+.perks span{border:1px solid var(--line);border-radius:8px;padding:3px 14px;font-size:15px;color:var(--muted)}
+section{padding:26px 0}
+h2{font-size:34px;color:var(--gold);margin-bottom:4px}.sub{color:var(--muted);margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px}
+.pkg{background:var(--surface);border:2px solid var(--line);border-radius:14px;padding:14px;text-align:right;cursor:pointer;font:inherit;color:inherit}
+.pkg b{display:block;font:700 28px "Reem Kufi",sans-serif}
+.pkg span{color:var(--muted);font-size:14px;display:block;line-height:1.4}
+.pkg em{display:block;font-style:normal;font-weight:700;margin-top:6px;color:var(--gold);font-size:19px}
+.pkg[aria-pressed="true"]{border-color:var(--blue);box-shadow:0 0 0 2px var(--blue)}
+.order{position:sticky;bottom:10px;margin-top:18px;background:var(--surface);border:1px solid var(--gold);border-radius:14px;padding:14px 16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.order input{flex:1;min-width:180px;font:inherit;padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+.order .sel{width:100%;margin:0;color:var(--muted)}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chips span{border:1px solid var(--gold);color:var(--gold);border-radius:99px;padding:2px 14px;font-weight:700}
+.pay{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.pay div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:2px}
+.pay b{font-size:19px}.pay code{font:700 20px Tajawal,monospace;direction:ltr;text-align:right;color:var(--blue)}
+.pay button{margin-top:8px;align-self:flex-start;background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:2px 14px;font:inherit;cursor:pointer}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center}
+.two img{width:100%;border-radius:16px;display:block}
+.banner{width:100%;border-radius:16px;display:block;margin-top:16px}
+footer{margin-top:40px;padding:22px 0 30px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media(max-width:700px){nav{display:none}.two{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.strip{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px}
+.strip img{height:360px;width:auto;border-radius:12px;border:1px solid var(--line);scroll-snap-align:start;cursor:zoom-in;flex:none}
+dialog{background:var(--bg);border:1px solid var(--gold);border-radius:14px;padding:12px;max-width:94vw;max-height:94vh;text-align:center}
+dialog::backdrop{background:rgba(0,0,0,.8)}
+dialog img{max-width:100%;max-height:78vh;display:block;margin:0 auto 10px;border-radius:8px}
+.up{display:block;margin:14px 0 4px;font-weight:700}#shot{display:block;margin:6px 0;color:var(--ink);max-width:100%}#prev{max-width:240px;width:100%;border-radius:10px;display:block;margin:8px 0}#pp .pay{margin-top:6px}.pkg .r{display:flex;align-items:center;gap:10px}.coin{width:42px;height:42px;flex:none}.coin{width:auto;height:56px;max-width:90px;object-fit:contain}#acclist{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:20px}#acclist h3{grid-column:1/-1;font-size:26px;color:var(--gold)}.ac{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:8px;min-width:0}.ac .p{font:700 22px 'Reem Kufi',sans-serif;color:var(--gold)}.ac .row{display:flex;gap:8px;flex-wrap:wrap}.ac .btn{padding:8px 16px;font-size:15px}</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="index.html" style="text-decoration:none">NEGM STORE</a><nav><a href="index.html">الرئيسية</a><a href="index.html#uc">شحن شدات</a><a href="index.html#pay">الدفع</a></nav><a class="tg" href="https://t.me/negmstore2020" target="_blank" rel="noopener">تليجرام</a></div></header>
+<div class="wrap">
+<section style="padding-top:34px">
+  <h2>حسابات ببجي للبيع</h2>
+  <p class="sub">كل حساب بصوره وسعره. دوس على "اشتري الحساب" وكلمنا على واتساب.</p>
+  <div id="acclist"><p class="sub">جاري تحميل الحسابات...</p></div>
+</section>
+<section>
+  <div class="box" style="display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap">
+    <div><h2 style="font-size:28px;margin:0">عندك حساب وعايز تبيعه؟</h2><p class="sub" style="margin:4px 0 0">ابعتلنا المستوى والسكنات ونرد عليك بسعر.</p></div>
+    <a class="btn" id="sellb" href="#" target="_blank" rel="noopener">قيّم حسابك</a>
+  </div>
+</section>
+<footer><span>© Negm Store. واتساب: 01228134233 · <a href="https://t.me/negmstore2020" target="_blank" rel="noopener" style="color:var(--blue)">تليجرام</a></span><span><a href="index.html" style="color:var(--blue)">الرجوع للرئيسية</a></span></footer>
+</div>
+<script>
+var WA="201228134233";
+var $=function(i){return document.getElementById(i)};
+$("sellb").href="https://wa.me/"+WA+"?text="+encodeURIComponent("عايز أبيع حساب ببجي. المستوى والسكنات: ");
+function csv(t){var r=[],row=[],c="",q=false;for(var i=0;i<t.length;i++){var ch=t[i];if(q){if(ch=='"'){if(t[i+1]=='"'){c+='"';i++}else q=false}else c+=ch}else if(ch=='"')q=true;else if(ch==","){row.push(c);c=""}else if(ch=="\n"||ch=="\r"){if(ch=="\r"&&t[i+1]=="\n")i++;row.push(c);r.push(row);row=[];c=""}else c+=ch}if(c||row.length){row.push(c);r.push(row)}return r}
+function loadAcc(){var SID="1nJqH6KN8-z-f9UPf-v-UqkTQUq7rWKwjkrMe-Bg40yg",U2=["https://docs.google.com/spreadsheets/d/"+SID+"/gviz/tq?tqx=out:csv","https://docs.google.com/spreadsheets/d/"+SID+"/export?format=csv"];
+(function go(i){if(i>=U2.length){$("acclist").innerHTML='<p class="sub">ماقدرناش نحمّل الحسابات دلوقتي، شوفها على قناتنا في تليجرام.</p>';return}
+fetch(U2[i]+"&t="+Date.now()).then(function(r){if(!r.ok)throw 0;return r.text()}).then(function(t){if(/^\s*</.test(t))throw 0;
+var rows=csv(t),H=(rows.shift()||[]).map(function(x){return x.trim().toLowerCase()}),box=$("acclist"),n=0;box.innerHTML="";
+rows.forEach(function(r){var o={};H.forEach(function(k,i){o[k]=(r[i]||"").trim()});
+if(!o.post||/sold|مباع/i.test(o.status||""))return;
+var m=o.post.match(/([A-Za-z0-9_]+)\/(\d+)/),post=m?m[1]+"/"+m[2]:(/^\d+$/.test(o.post)?"negmstore2020/"+o.post:null);if(!post)return;
+if(!n){var h3=document.createElement("h3");h3.textContent="الحسابات المتاحة الآن";box.appendChild(h3)}n++;
+var d=document.createElement("div");d.className="ac";
+if(o.title){var t2=document.createElement("b");t2.textContent=o.title;d.appendChild(t2)}
+if(o.price){var p=document.createElement("div");p.className="p";p.textContent=o.price+" ج.م";d.appendChild(p)}
+var s=document.createElement("script");s.async=true;s.src="https://telegram.org/js/telegram-widget.js?22";s.setAttribute("data-telegram-post",post);s.setAttribute("data-width","100%");s.setAttribute("data-dark","1");d.appendChild(s);
+var row=document.createElement("div");row.className="row";
+var a=document.createElement("a");a.className="btn";a.target="_blank";a.rel="noopener";a.textContent="اشتري الحساب";
+a.href="https://wa.me/"+WA+"?text="+encodeURIComponent("عايز أشتري الحساب ده: https://t.me/"+post+(o.price?" بسعر "+o.price+" ج.م":""));
+var b=document.createElement("a");b.className="btn alt";b.target="_blank";b.rel="noopener";b.textContent="كلّم الدعم";b.href="https://t.me/Mamdooh_Essam";
+row.appendChild(a);row.appendChild(b);d.appendChild(row);box.appendChild(d)});if(!n)box.innerHTML='<p class="sub">لسه مفيش حسابات متاحة دلوقتي، كلمنا على تليجرام أو واتساب.</p>'
+}).catch(function(){go(i+1)})})(0)}
+loadAcc();
+</script>
+</body>
+</html>
